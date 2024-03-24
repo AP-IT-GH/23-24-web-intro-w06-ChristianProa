@@ -63,8 +63,8 @@
           <main class="col-md-9">
             <section id="shopintro" class="row">
               <article class="col-12 mb-3">
-                <h2 class="text-uppercase fw-bolder pt-3 fs-4">contact</h2>
-                <p>Vul het registratieformulier in. Velden met een '*' zijn verplicht.</p>
+                <h2 class="text-uppercase fw-bolder pt-3 fs-4 ">contact</h2>
+                <p>Vul het registratieformulier in. Velden met een <span class="koffiebruin">*</span> zijn verplicht.</p>
               </article>
               <hr>
               <div class=" container my-3">
@@ -72,15 +72,15 @@
                     <fieldset class="row g-3 mb-3">
                         <legend class="h2 mb-3 pt-3">Gegevens</legend>
                         <div class="col-md-6">
-                            <label for="voormaam" class="form-label">voornaam <span class="text-brown">*</span></label>
+                            <label for="voormaam" class="form-label">voornaam <span class="koffiebruin">*</span></label>
                             <input type="text" class="form-control" id="voornaam" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="achternaam" class="form-label">achternaam <span class="text-brown">*</span></label>
+                            <label for="achternaam" class="form-label">achternaam <span class="koffiebruin">*</span></label>
                             <input type="text" class="form-control" id="achternaam" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="mobiel" class="form-label">mobiel <span class="text-brown">*</span></label>
+                            <label for="mobiel" class="form-label">mobiel </label>
                             <input type="tel" class="form-control" id="mobiel" placeholder="0412 34 56 78">
                         </div>
                         <div class="col-md-6">
@@ -88,7 +88,77 @@
                             <input type="date" class="form-control" id="geboortedatum">
                         </div>
                     </fieldset>
-
+                    <fieldset class="row g-3 mb-3">
+                        <legend class="h2 mb-3 pt-3">Accountgegevens</legend>
+                        <div class="col-12">
+                            <label for="email" class="form-label">email <span class="koffiebruin">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">password <span class="koffiebruin">*</span></label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="bevestig-password" class="form-label">bevestig password <span class="koffiebruin">*</span></label>
+                            <input type="password" class="form-control" id="bevestig-password" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row g-3 mb-3">
+                        <legend class="h2 mb-3 pt-3">Adresgegevens</legend>
+                        <div class="col-md-12">
+                            <label for="adres" class="form-label">adres <span class="koffiebruin">*</span></label>
+                            <input type="text" class="form-control" id="adres" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="postcode" class="form-label">postcode <span class="koffiebruin">*</span></label>
+                            <input type="text" class="form-control" id="postcode" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="stad" class="form-label">stad <span class="koffiebruin">*</span></label>
+                            <input type="text" class="form-control" id="stad" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="land" class="form-label">kies een land <span class="koffiebruin">*</span></label>
+                            <select class="form-select" id="land" required>
+                                <option value="BE">België</option>
+                                <option value="DE">Duitsland</option>
+                                <option value="FR">Frankrijk</option>
+                                <option value="LUX">Luxemburg</option>
+                                <option value="NL">Nederland</option>
+                                <option value="UK">Verenigd Koninkrijk</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row g-3 mb-3">
+                        <legend class="h2 mb-3 pt-3">Koffie-achtergrond</legend>
+                        <div class="col-md-6">
+                            <label for="ik-koop" class="form-label">ik koop</label>
+                            <select class="form-select" id="ik-koop">
+                                <option value="koffiebonen">koffiebonen</option>
+                                <option value="gemalen koffie">gemalen koffie</option>
+                                <option value="oploskoffie">oploskoffie</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fan-van" class="form-label">en ben fan van het merk</label>
+                            <select class="form-select" id="fan-van">
+                                <option value="illy">Illy</option>
+                                <option value="lavazza">Lavazza</option>
+                                <option value="starbucks">Starbucks</option>
+                                <option value="gran maestro italiano ">Gran maestro Italiano</option>
+                                <option value="celeste d'oro">Celeste d'Oro</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="customRange1" class="form-label">hoe tevreden ben je van ons?</label>
+                        <input type="range" class="form-range" min="0" max="10" id="customRange1">
+                    </div>
+                    <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">verzenden</button>
+                    </div>
+                    </div>
                 </form>
               </div>
               
